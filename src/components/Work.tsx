@@ -28,15 +28,19 @@ const Work = () => {
     scrollTrigger: {
       trigger: ".work-section",
       start: "top top",
-      end: `+=${translateX}`, // Use actual scroll width
+      end: () => {
+        setTranslateX();
+        return `+=${translateX}`;
+      },
       scrub: true,
       pin: true,
       id: "work",
+      invalidateOnRefresh: true,
     },
   });
 
   timeline.to(".work-flex", {
-    x: -translateX,
+    x: () => -translateX,
     ease: "none",
   });
 

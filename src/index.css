@@ -73,9 +73,9 @@ body {
 .techstack {
   width: 100%;
   position: relative;
-  height: var(--vh);
-  margin: auto;
-  margin-top: 50px;
+  height: 80vh;
+  margin: 150px auto 200px auto;
+  padding-bottom: 50px;
 }
 
 .techstack h2 {

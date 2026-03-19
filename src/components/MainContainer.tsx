@@ -44,7 +44,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
     <div className="container-main">
       <Cursor />
       <Navbar />
-      <SocialIcons />
+      {/* <SocialIcons /> */}
       {isDesktopView && children}
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -56,7 +56,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <Work />
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>
-                <TechStack />
+                {/* <TechStack /> */}
               </Suspense>
             )}
             <Contact />

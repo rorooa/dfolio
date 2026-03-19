@@ -9,6 +9,8 @@
 .work-section {
   transition: 0s;
   height: 100vh;
+  padding-bottom: 0;
+  margin-bottom: 15vh;
   box-sizing: border-box;
   will-change: transform;
 }
